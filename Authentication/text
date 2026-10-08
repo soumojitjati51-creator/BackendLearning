@@ -1,0 +1,58 @@
+four things inside authentication-
+    Validation
+
+    Verification
+
+    Authentication
+
+    Authorization
+
+| Aspect                | Simple meaning                                   | Example                                                              |
+| --------------------- | ------------------------------------------------ | -------------------------------------------------------------------- |
+| **1. Validation**     | **Is the data in the correct format?**           | Email should contain `@`, password should have 8+ characters         |
+| **2. Verification**   | **Is the data/person actually what they claim?** | OTP confirms that the phone number belongs to you                    |
+| **3. Authentication** | **Who are you?**                                 | You log in with email + password → server identifies you as Soumojit |
+| **4. Authorization**  | **What are you allowed to do?**                  | You are logged in, but only an admin can delete users                |
+
+
+🧠 Easy way to remember
+
+Imagine entering a college:
+
+Validation → Is your ID card properly filled/formatted?
+Verification → Is the ID card genuine?
+Authentication → Are you actually Soumojit?
+Authorization → Are you allowed to enter this particular room?
+
+So the flow is roughly:
+
+Valid data → Genuine identity → Identify user → Check permissions
+
+One important point: Authentication ≠ Authorization.
+Authentication asks "Who are you?" while authorization asks "What can you do?"
+
+
+Two Ways Of Doing Authentication-
+i) Session-based 
+ii) token based 
+
+here we'll learn token-based first
+
+
+
+| File               | Main responsibility                              | Usually requires       |
+| ------------------ | ------------------------------------------------ | ---------------------- |
+| `app.js`           | Create/configure Express server                  | `express`              |
+| `routes/*.js`      | Define endpoints and connect them to controllers | `express`, controllers |
+| `controllers/*.js` | Execute API/business logic                       | models/services/etc.   |
+| `models/*.js`      | Define database structure & operations           | `mongoose`             |
+| `services/*.js`    | Handle reusable external/business operations     | Relevant library       |
+
+
+
+Cookies:
+cookies is a storage in website that the server can easily access and modify the data in it
+
+there multiple types of storage in website like localstorage, session storage,cookies, indexedDB, cache storage, web storage etc
+
+another  speciality of cookies is if you try to send the data in cookies to server it will surely go to the server
